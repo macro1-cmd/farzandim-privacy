@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farzandim — Maxfiylik Siyosati</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f8f9ff;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #3d2c8d, #6a4fc4);
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 26px; font-weight: 700; letter-spacing: 0.5px; }
+    header p  { font-size: 13px; opacity: 0.85; margin-top: 6px; }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px;
+      background: #fff;
+      border-bottom: 1px solid #e8e8f0;
+    }
+    .lang-switch button {
+      padding: 6px 20px;
+      border: 2px solid #6a4fc4;
+      border-radius: 20px;
+      background: transparent;
+      color: #6a4fc4;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-switch button.active { background: #6a4fc4; color: #fff; }
+    .content { display: none; max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; }
+    .content.active { display: block; }
+    .section {
+      background: #fff;
+      border-radius: 14px;
+      padding: 22px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(106,79,196,0.07);
+    }
+    .section-num {
+      display: inline-block;
+      background: #6a4fc4;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+    .section h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #3d2c8d;
+      margin-bottom: 10px;
+    }
+    .section p, .section li { font-size: 14px; color: #444; }
+    .section ul { padding-left: 18px; margin-top: 8px; }
+    .section ul li { margin-bottom: 6px; }
+    .highlight {
+      background: #f0ebff;
+      border-left: 4px solid #6a4fc4;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 14px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #3d2c8d;
+      font-weight: 500;
+    }
+    .contact-box {
+      background: linear-gradient(135deg, #3d2c8d, #6a4fc4);
+      border-radius: 14px;
+      padding: 22px 20px;
+      color: #fff;
+      text-align: center;
+    }
+    .contact-box h2 { font-size: 16px; margin-bottom: 8px; }
+    .contact-box a { color: #c8b8ff; font-weight: 600; text-decoration: none; }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔒 Farzandim</h1>
+  <p>Maxfiylik Siyosati · Privacy Policy</p>
+</header>
+
+<div class="lang-switch">
+  <button class="active" onclick="switchLang('uz', this)">O'zbekcha</button>
+  <button onclick="switchLang('en', this)">English</button>
+</div>
+
+<!-- ===== O'ZBEK ===== -->
+<div id="uz" class="content active">
+
+  <div class="section">
+    <span class="section-num">01</span>
+    <h2>Yig'iladigan ma'lumotlar</h2>
+    <p>Farzandim ilovasi quyidagi ma'lumotlarni yig'adi:</p>
+    <ul>
+      <li><strong>Geolokatsiya</strong> — bolaning joylashuvi, Safe Zone va SOS signal uchun</li>
+      <li><strong>Ekran vaqti</strong> — qaysi ilovada qancha vaqt o'tkazganligi (kontent o'qilmaydi)</li>
+      <li><strong>Profil ma'lumotlari</strong> — ism, yosh, avatar (ro'yxatdan o'tishda kiritiladi)</li>
+      <li><strong>O'quv faolligi</strong> — olimpiada natijalari, o'qilgan kitoblar, XP ballari</li>
+      <li><strong>Qurilma identifikatori</strong> — bola va ota-ona qurilmalarini bog'lash uchun</li>
+    </ul>
+    <div class="highlight">
+      Klaviatura yozuvlari, SMS, qo'ng'iroq tarixi va kontent matnlari <strong>hech qachon</strong> yig'ilmaydi.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">02</span>
+    <h2>Ma'lumotlar qanday ishlatiladi</h2>
+    <ul>
+      <li>Bolaning xavfsizligini ta'minlash — geolokatsiya va Safe Zone bildirishnomalari</li>
+      <li>Ota-ona nazorat panelida statistika ko'rsatish</li>
+      <li>Olimpiada va o'quv tavsiyalari personalizatsiyasi</li>
+      <li>SOS signali yetkazib berish</li>
+      <li>Ilovaning ishlashini yaxshilash (anonim analytics)</li>
+    </ul>
+    <div class="highlight">
+      Ma'lumotlar faqat Farzandim platformasi doirasida ishlatiladi. Reklama yoki profiling uchun foydalanilmaydi.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">03</span>
+    <h2>Ma'lumotlar uchinchi tomonga berilmaydi</h2>
+    <p>Farzandim foydalanuvchi ma'lumotlarini hech qanday uchinchi tomon kompaniya, reklama tarmog'i yoki davlat organiga <strong>sotmaydi va bermaydi</strong>.</p>
+    <ul>
+      <li>Firebase (Google) — push bildirishnomalar uchun (maxfiylik siyosati bilan himoyalangan)</li>
+      <li>To'lov tizimi — faqat to'lov ma'lumotlari, shaxsiy ma'lumotlar emas</li>
+    </ul>
+    <div class="highlight">
+      Barcha ma'lumotlar O'zbekiston hududidagi serverlarda saqlanadi (ZRU-547 talabiga muvofiq).
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">04</span>
+    <h2>Ota-ona nazorati va roziligi</h2>
+    <p>Farzandim — ota-onalar uchun mo'ljallangan nazorat platformasi:</p>
+    <ul>
+      <li>Bola ilovani o'rnatishdan oldin ota-ona roziligini talab qiladi</li>
+      <li>Monitoring shaffof — bola qaysi ma'lumotlar yig'ilayotganini ko'rishi mumkin</li>
+      <li>Ota-ona istalgan vaqt nazorat sozlamalarini o'zgartirishi mumkin</li>
+      <li>13 yoshdan kichik bolalar uchun ota-ona roziligisiz ro'yxatdan o'tib bo'lmaydi</li>
+    </ul>
+    <div class="highlight">
+      O'zbekiston qonunchiligiga muvofiq: ZRU-547 (Shaxsiy ma'lumotlar), ZRU-444 (Bolalarni himoya).
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">05</span>
+    <h2>Ma'lumotlarni o'chirish huquqi</h2>
+    <p>Har bir foydalanuvchiga quyidagi huquqlar berilgan:</p>
+    <ul>
+      <li><strong>Ko'rish huquqi</strong> — o'z ma'lumotlarini so'rab olish</li>
+      <li><strong>O'zgartirish huquqi</strong> — profil va sozlamalarni tahrirlash</li>
+      <li><strong>O'chirish huquqi</strong> — hisobni va barcha ma'lumotlarni butunlay o'chirish</li>
+      <li><strong>Chiqib ketish huquqi</strong> — ilovadan istalgan vaqt chiqib ketish</li>
+    </ul>
+    <div class="highlight">
+      Hisob o'chirilgandan so'ng 30 kun ichida barcha shaxsiy ma'lumotlar serverlardan o'chiriladi.
+    </div>
+  </div>
+
+  <div class="contact-box">
+    <h2>📩 Bog'lanish</h2>
+    <p style="font-size:14px; opacity:0.9; margin: 8px 0 14px;">
+      Maxfiylik bo'yicha savollar va murojaat uchun:
+    </p>
+    <a href="mailto:support@farzandim.uz">support@farzandim.uz</a>
+  </div>
+
+</div>
+
+<!-- ===== ENGLISH ===== -->
+<div id="en" class="content">
+
+  <div class="section">
+    <span class="section-num">01</span>
+    <h2>Data We Collect</h2>
+    <p>Farzandim collects the following information:</p>
+    <ul>
+      <li><strong>Geolocation</strong> — child's location for Safe Zone alerts and SOS signal</li>
+      <li><strong>Screen time</strong> — which apps are used and for how long (content is not read)</li>
+      <li><strong>Profile data</strong> — name, age, avatar (entered during registration)</li>
+      <li><strong>Learning activity</strong> — olympiad results, books read, XP points</li>
+      <li><strong>Device identifier</strong> — to link child and parent devices</li>
+    </ul>
+    <div class="highlight">
+      Keystrokes, SMS, call logs, and message content are <strong>never</strong> collected.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">02</span>
+    <h2>How We Use Your Data</h2>
+    <ul>
+      <li>Ensuring child safety — geolocation and Safe Zone notifications</li>
+      <li>Displaying statistics in the parent dashboard</li>
+      <li>Personalizing olympiad and learning recommendations</li>
+      <li>Delivering SOS signals</li>
+      <li>Improving app performance (anonymous analytics)</li>
+    </ul>
+    <div class="highlight">
+      Data is used solely within the Farzandim platform. It is never used for advertising or profiling.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">03</span>
+    <h2>No Third-Party Data Sharing</h2>
+    <p>Farzandim does <strong>not sell or share</strong> user data with any third-party companies, advertising networks, or government agencies.</p>
+    <ul>
+      <li>Firebase (Google) — for push notifications only (covered by their privacy policy)</li>
+      <li>Payment processor — payment data only, no personal information</li>
+    </ul>
+    <div class="highlight">
+      All data is stored on servers located in Uzbekistan, in compliance with law ZRU-547.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">04</span>
+    <h2>Parental Control & Consent</h2>
+    <p>Farzandim is a parental control platform designed for families:</p>
+    <ul>
+      <li>Parental consent is required before a child installs the app</li>
+      <li>Monitoring is transparent — children can see what data is collected</li>
+      <li>Parents can modify monitoring settings at any time</li>
+      <li>Children under 13 cannot register without explicit parental consent</li>
+    </ul>
+    <div class="highlight">
+      Compliant with Uzbekistan law: ZRU-547 (Personal Data) and ZRU-444 (Child Protection).
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">05</span>
+    <h2>Your Right to Delete Data</h2>
+    <p>Every user is granted the following rights:</p>
+    <ul>
+      <li><strong>Right to access</strong> — request a copy of your data</li>
+      <li><strong>Right to correct</strong> — edit your profile and settings</li>
+      <li><strong>Right to delete</strong> — permanently delete your account and all data</li>
+      <li><strong>Right to withdraw</strong> — leave the platform at any time</li>
+    </ul>
+    <div class="highlight">
+      After account deletion, all personal data is removed from our servers within 30 days.
+    </div>
+  </div>
+
+  <div class="contact-box">
+    <h2>📩 Contact Us</h2>
+    <p style="font-size:14px; opacity:0.9; margin: 8px 0 14px;">
+      For privacy questions and requests:
+    </p>
+    <a href="mailto:support@farzandim.uz">support@farzandim.uz</a>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Farzandim. Barcha huquqlar himoyalangan. · All rights reserved.
+</footer>
+
+<script>
+  function switchLang(lang, btn) {
+    document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
