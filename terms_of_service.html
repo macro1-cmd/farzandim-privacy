@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farzandim — Foydalanish Shartlari</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f8f9ff;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #3d2c8d, #6a4fc4);
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 26px; font-weight: 700; letter-spacing: 0.5px; }
+    header p  { font-size: 13px; opacity: 0.85; margin-top: 6px; }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px;
+      background: #fff;
+      border-bottom: 1px solid #e8e8f0;
+    }
+    .lang-switch button {
+      padding: 6px 20px;
+      border: 2px solid #6a4fc4;
+      border-radius: 20px;
+      background: transparent;
+      color: #6a4fc4;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-switch button.active { background: #6a4fc4; color: #fff; }
+    .content { display: none; max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; }
+    .content.active { display: block; }
+    .section {
+      background: #fff;
+      border-radius: 14px;
+      padding: 22px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(106,79,196,0.07);
+    }
+    .section-num {
+      display: inline-block;
+      background: #6a4fc4;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+    .section h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #3d2c8d;
+      margin-bottom: 10px;
+    }
+    .section p, .section li { font-size: 14px; color: #444; }
+    .section ul { padding-left: 18px; margin-top: 8px; }
+    .section ul li { margin-bottom: 6px; }
+    .highlight {
+      background: #f0ebff;
+      border-left: 4px solid #6a4fc4;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 14px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #3d2c8d;
+      font-weight: 500;
+    }
+    .contact-box {
+      background: linear-gradient(135deg, #3d2c8d, #6a4fc4);
+      border-radius: 14px;
+      padding: 22px 20px;
+      color: #fff;
+      text-align: center;
+    }
+    .contact-box h2 { font-size: 16px; margin-bottom: 8px; }
+    .contact-box a { color: #c8b8ff; font-weight: 600; text-decoration: none; }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📋 Farzandim</h1>
+  <p>Foydalanish Shartlari · Terms of Service</p>
+</header>
+
+<div class="lang-switch">
+  <button class="active" onclick="switchLang('uz', this)">O'zbekcha</button>
+  <button onclick="switchLang('en', this)">English</button>
+</div>
+
+<!-- ===== O'ZBEK ===== -->
+<div id="uz" class="content active">
+
+  <div class="section">
+    <span class="section-num">01</span>
+    <h2>Shartlar haqida</h2>
+    <p>Farzandim ilovasini yuklab olish yoki foydalanish orqali siz ushbu Foydalanish Shartlarini qabul qilasiz. Agar shartlar bilan rozi bo'lmasangiz, ilovadan foydalanmang.</p>
+    <ul>
+      <li>Ushbu shartlar O'zbekiston qonunchiligiga muvofiq tuzilgan</li>
+      <li>Shartlar ilovaning barcha versiyalariga taalluqlidir</li>
+      <li>Yangilanishlar elektron pochta yoki ilova orqali xabar qilinadi</li>
+    </ul>
+    <div class="highlight">
+      Farzandim platformasidan foydalanish 18 yoshdan kichik foydalanuvchilar uchun ota-ona roziligini talab qiladi.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">02</span>
+    <h2>Foydalanuvchi hisobi</h2>
+    <p>Hisobingizni yaratish va saqlash bo'yicha qoidalar:</p>
+    <ul>
+      <li>Ro'yxatdan o'tishda to'g'ri ma'lumot kiritish majburiy</li>
+      <li>Hisobingiz uchun parol va xavfsizligini o'zingiz ta'minlaysiz</li>
+      <li>Bola hisobi faqat ota-ona ruxsati asosida yaratiladi</li>
+      <li>Bir foydalanuvchi bir nechta hisob yaratishi mumkin emas</li>
+      <li>Faolsizlik sababli 12 oy ichida kirish bo'lmagan hisoblar o'chirilishi mumkin</li>
+    </ul>
+    <div class="highlight">
+      Hisobingizga ruxsatsiz kirish aniqlansa, darhol support@farzandim.uz ga xabar bering.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">03</span>
+    <h2>Ruxsat etilmagan harakatlar</h2>
+    <p>Quyidagi harakatlar qat'iyan man etiladi:</p>
+    <ul>
+      <li>Ilovani teskari muhandislik qilish yoki manba kodini olishga urinish</li>
+      <li>Boshqa foydalanuvchilar ma'lumotlariga ruxsatsiz kirish</li>
+      <li>Yolg'on yoki noto'g'ri ma'lumot kiritish</li>
+      <li>Platformani spam, firibgarlik yoki zararli maqsadlarda ishlatish</li>
+      <li>Nazorat funksiyalarini chetlab o'tishga urinish</li>
+      <li>Ilovaning ishlashiga zarar yetkazuvchi dasturlar yuklash</li>
+    </ul>
+    <div class="highlight">
+      Qoidabuzarlik aniqlansa, hisob darhol o'chiriladi va qonuniy choralar ko'rilishi mumkin.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">04</span>
+    <h2>Intellektual mulk</h2>
+    <p>Farzandim platformasidagi barcha materiallar himoyalangan:</p>
+    <ul>
+      <li>Ilova dizayni, logotipi va grafik elementlari Farzandimga tegishli</li>
+      <li>O'quv kontenti, olimpiada savollari va kurs materiallari mualliflik huquqi bilan himoyalangan</li>
+      <li>Foydalanuvchi tomonidan yuklangan kontent uchun foydalanuvchi javobgar</li>
+      <li>Platformada joylashtirilgan kontent Farzandimdan ruxsatsiz ko'paytirilishi mumkin emas</li>
+    </ul>
+    <div class="highlight">
+      Farzandim nomini yoki brendini tijorat maqsadlarda ishlatish uchun yozma ruxsat talab qilinadi.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">05</span>
+    <h2>To'lov va obuna</h2>
+    <p>Farzandim tariflar va to'lov shartlari:</p>
+    <ul>
+      <li>Bepul tarif asosiy funksiyalarni o'z ichiga oladi</li>
+      <li>Standart va Premium tariflar oylik yoki yillik to'lov asosida faollashtiriladi</li>
+      <li>To'lovlar qaytarilmaydi, faqat texnik xatolik bo'lsa murojaat qilish mumkin</li>
+      <li>Obunani istalgan vaqt bekor qilish mumkin — keyingi to'lov davridan kuchga kiradi</li>
+      <li>Narxlar oldindan xabar berilib o'zgartirilishi mumkin</li>
+    </ul>
+    <div class="highlight">
+      Sinov davri (trial) faqat bir marta beriladi va avtomatik obunaga o'tishi mumkin.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">06</span>
+    <h2>Mas'uliyat chegaralari</h2>
+    <p>Farzandim quyidagi holatlarda javobgar emas:</p>
+    <ul>
+      <li>Internet ulanishi yo'qligi sababli xizmat uzilishlari</li>
+      <li>Foydalanuvchi parolini yo'qotishi yoki hisobga ruxsatsiz kirish</li>
+      <li>Uchinchi tomon xizmatlar (to'lov tizimlari, Firebase) tomonidan yuzaga kelgan muammolar</li>
+      <li>Bola qurilmasida amalga oshirilgan harakatlar uchun ota-ona mas'ul</li>
+    </ul>
+    <div class="highlight">
+      Farzandim nazorat vositasi sifatida yordam beradi, lekin farzandingizning xavfsizligi uchun to'liq javobgarlik ota-onada qoladi.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">07</span>
+    <h2>Shartlardagi o'zgarishlar</h2>
+    <p>Farzandim ushbu shartlarni yangilash huquqini o'zida saqlab qoladi:</p>
+    <ul>
+      <li>Muhim o'zgarishlar haqida kamida 14 kun oldin xabar beriladi</li>
+      <li>Yangilangan shartlar ilova yangilanishi yoki e-mail orqali yetkaziladi</li>
+      <li>Yangilanishdan so'ng ilovadan foydalanishni davom ettirish yangi shartlarni qabul qilish hisoblanadi</li>
+      <li>Shartlarni qabul qilmasangiz, hisobingizni o'chirib, ilovadan foydalanishni to'xtating</li>
+    </ul>
+    <div class="highlight">
+      Oxirgi yangilanish: 2026-yil 1-yanvar. Savollar uchun support@farzandim.uz ga murojaat qiling.
+    </div>
+  </div>
+
+  <div class="contact-box">
+    <h2>📩 Bog'lanish</h2>
+    <p style="font-size:14px; opacity:0.9; margin: 8px 0 14px;">
+      Foydalanish shartlari bo'yicha savollar uchun:
+    </p>
+    <a href="mailto:support@farzandim.uz">support@farzandim.uz</a>
+  </div>
+
+</div>
+
+<!-- ===== ENGLISH ===== -->
+<div id="en" class="content">
+
+  <div class="section">
+    <span class="section-num">01</span>
+    <h2>About These Terms</h2>
+    <p>By downloading or using the Farzandim app, you agree to these Terms of Service. If you do not agree, please do not use the app.</p>
+    <ul>
+      <li>These terms are governed by the laws of Uzbekistan</li>
+      <li>Terms apply to all versions of the application</li>
+      <li>Updates will be communicated via email or in-app notification</li>
+    </ul>
+    <div class="highlight">
+      Use of the Farzandim platform by users under 18 requires parental consent.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">02</span>
+    <h2>User Account</h2>
+    <p>Rules for creating and maintaining your account:</p>
+    <ul>
+      <li>Accurate information must be provided during registration</li>
+      <li>You are responsible for your account password and security</li>
+      <li>Child accounts may only be created with parental authorization</li>
+      <li>A single user may not create multiple accounts</li>
+      <li>Accounts inactive for 12 months may be deleted</li>
+    </ul>
+    <div class="highlight">
+      If unauthorized access to your account is detected, notify us immediately at support@farzandim.uz.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">03</span>
+    <h2>Prohibited Actions</h2>
+    <p>The following actions are strictly prohibited:</p>
+    <ul>
+      <li>Reverse engineering the app or attempting to obtain its source code</li>
+      <li>Unauthorized access to other users' data</li>
+      <li>Providing false or misleading information</li>
+      <li>Using the platform for spam, fraud, or malicious purposes</li>
+      <li>Attempting to bypass parental control features</li>
+      <li>Uploading software that damages the app's functionality</li>
+    </ul>
+    <div class="highlight">
+      Violations will result in immediate account termination and may lead to legal action.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">04</span>
+    <h2>Intellectual Property</h2>
+    <p>All materials on the Farzandim platform are protected:</p>
+    <ul>
+      <li>App design, logo, and graphic elements belong to Farzandim</li>
+      <li>Educational content, olympiad questions, and course materials are protected by copyright</li>
+      <li>Users are responsible for content they upload</li>
+      <li>Platform content may not be reproduced without permission from Farzandim</li>
+    </ul>
+    <div class="highlight">
+      Commercial use of the Farzandim name or brand requires written authorization.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">05</span>
+    <h2>Payments &amp; Subscriptions</h2>
+    <p>Farzandim pricing and payment terms:</p>
+    <ul>
+      <li>The Free plan includes core features</li>
+      <li>Standard and Premium plans are activated on a monthly or annual basis</li>
+      <li>Payments are non-refundable except in cases of verified technical error</li>
+      <li>Subscriptions can be cancelled at any time — takes effect from the next billing cycle</li>
+      <li>Prices may change with advance notice</li>
+    </ul>
+    <div class="highlight">
+      Trial periods are granted once only and may automatically convert to a paid subscription.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">06</span>
+    <h2>Limitation of Liability</h2>
+    <p>Farzandim is not liable for:</p>
+    <ul>
+      <li>Service interruptions due to lack of internet connectivity</li>
+      <li>Loss of user passwords or unauthorized account access</li>
+      <li>Issues arising from third-party services (payment processors, Firebase)</li>
+      <li>Parents remain responsible for actions taken on the child's device</li>
+    </ul>
+    <div class="highlight">
+      Farzandim serves as a monitoring aid, but full responsibility for your child's safety remains with the parent.
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-num">07</span>
+    <h2>Changes to These Terms</h2>
+    <p>Farzandim reserves the right to update these terms:</p>
+    <ul>
+      <li>Notice of significant changes will be provided at least 14 days in advance</li>
+      <li>Updated terms will be communicated via app update or email</li>
+      <li>Continued use of the app after an update constitutes acceptance of the new terms</li>
+      <li>If you do not accept the updated terms, please delete your account and stop using the app</li>
+    </ul>
+    <div class="highlight">
+      Last updated: January 1, 2026. For questions, contact support@farzandim.uz.
+    </div>
+  </div>
+
+  <div class="contact-box">
+    <h2>📩 Contact Us</h2>
+    <p style="font-size:14px; opacity:0.9; margin: 8px 0 14px;">
+      For questions about these Terms of Service:
+    </p>
+    <a href="mailto:support@farzandim.uz">support@farzandim.uz</a>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Farzandim. Barcha huquqlar himoyalangan. &middot; All rights reserved.
+</footer>
+
+<script>
+  function switchLang(lang, btn) {
+    document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
